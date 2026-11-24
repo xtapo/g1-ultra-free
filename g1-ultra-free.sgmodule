@@ -6,7 +6,7 @@
 AND,((PROTOCOL,UDP),(DEST-PORT,443)),REJECT-NO-DROP
 
 [Script]
-g1-ultra-free = type=http-response,pattern=^https:\/\/one\.google\.com\/(ai|upsell|plans|storage),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nmchien123/g1-ultra-free/main/g1-ultra-free.js
+g1-ultra-free = type=http-response,pattern=^https:\/\/one\.google\.com\/(ai|upsell|plans|storage),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/xtapo/g1-ultra-free/main/g1-ultra-free.js
 
 [MITM]
 hostname = %APPEND% one.google.com
